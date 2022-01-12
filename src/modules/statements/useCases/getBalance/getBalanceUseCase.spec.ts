@@ -53,7 +53,7 @@ describe("Get balance", () => {
     expect(balance).toBe(IS_BALANCE);
   });
 
-  it("Should not be able get balance non-exsitent user", async () => {
+  it("Should not be able get balance non-existent user", async () => {
     expect(async () => {
       await getBalanceUsecase.execute({
         user_id: "788",
